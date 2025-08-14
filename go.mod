@@ -1,4 +1,4 @@
-module github.com/zekun-li/zekun-li.github.io
+module github.com/shoibolina/lina-latitude.github.io
 
 go 1.19
 
