@@ -1,0 +1,7 @@
+{{/* Minimal Open Graph fallback so themes that call _internal/opengraph.html won't fail */}}
+{{- $title := .Title | default .Site.Title -}}
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with .Params.images }}<meta property="og:image" content="{{ index . 0 }}">{{ end }}
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
