@@ -1,0 +1,29 @@
+# section information
+section:
+  name: Accomplishments
+  id: accomplishments
+  enable: true
+  weight: 8
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+
+# Your accomplishments
+accomplishments:
+- name: Ordnance Survey Award
+  timeline: "September 2022"
+  organization:
+    name: British Cartographic Society
+    url: https://www.cartography.org.uk/
+  courseOverview: "**Mishmash: A Mix of Old and New** won the Ordnance Survey Award 2022. I adopted cycleGAN to generate synthetic historical maps from Open Street Map (OSM) vector data."
+  certificateURL: "https://youtu.be/J7xRyDLue6U?t=72"
+
+- name: AI for Critical Mineral Assessment Competition
+  timeline: "December 2022"
+  organization:
+    name: DARPA
+    url: https://www.darpa.mil/ 
+  courseOverview: "The Map Feature Extraction Challenge required us to identify and label map features–lines, polygons, and points– that appear in the legend of historical maps. Our team **isi-umn** won the **first place**."
+  certificateURL: "https://criticalminerals.darpa.mil/Results"
+

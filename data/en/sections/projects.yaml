@@ -1,0 +1,51 @@
+# section information
+section:
+  name: Selected Projects
+  id: projects
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+# buttons:
+# - name: All
+#   filter: "all"
+# - name: Professional
+#   filter: "professional"
+# - name: Academic
+#   filter: "academic"
+# - name: Hobby
+#   filter: "hobby"
+
+# your projects
+projects:
+- name: mapKurator system
+  logo: /images/sections/projects/github.png
+  role: Team Lead
+  timeline: "March 2020 - Present"
+  # repo: https://knowledge-computing.github.io/mapkurator-doc/#/ # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  url: "https://knowledge-computing.github.io/mapkurator-doc/"  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: A deep learning tool to process scanned historical maps. Performs text detection & recoginition, postOCR correction and entity linking. 
+  tags: ["map processing", "deep learning"]
+
+- name: SpaBERT
+  logo: /images/sections/projects/github.png
+  role: First Author
+  timeline: "Jan 2021 - Nov 2022"
+  url: "https://github.com/zekun-li/spabert"
+  summary: SpaBERT extends BERT to capture linearized spatial context, while incorporating a spatial coordinate embedding mechanism to preserve spatial relations of entities in the 2-dimensional space.
+  tags: ["nlp","geospatial"]
+
+- name: Synthetic Map Generation
+  logo: /images/sections/projects/github.png
+  role: First Author
+  timeline: "Jun 2019 - Aug 2020"
+  # repo: https://github.com/tensorflow/tensorflow
+  url: "https://github.com/zekun-li/generate_synthetic_historical_maps"
+  summary: Utilized cycle-GAN to convert open street map (OSM) images into historical map style.
+  tags: ["historical maps"]
+
+
+
