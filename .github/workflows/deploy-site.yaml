@@ -22,15 +22,30 @@ jobs:
     # - name: Update Hugo Modules
     #   run: hugo mod tidy
 
+    # - name: Setup Node
+    #   uses: actions/setup-node@v4
+    #   with:
+    #     node-version: 18
+
+    # - name: Install node modules
+    #   run: |
+    #     hugo mod npm pack
+    #     npm install
+
     - name: Setup Node
       uses: actions/setup-node@v4
       with:
-        node-version: 18
+        node-version: 20
 
     - name: Install node modules
       run: |
-        hugo mod npm pack
-        npm install
+        if [ -f package-lock.json ]; then
+          npm ci
+        elif [ -f package.json ]; then
+          npm install
+        else
+          echo "No package.json; skipping npm install"
+        fi
 
     - name: Build
       run: hugo --minify
