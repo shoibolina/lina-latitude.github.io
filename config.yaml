@@ -150,7 +150,7 @@ params:
       services:
         # Google Analytics
         google:
-          id: G-DEQFKK2CDH
+          id: G-388P71BJSE # unique GA4 Measurement ID
         # # CounterDev
         # counterDev:
         #   id: <your counterdev id>

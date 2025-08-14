@@ -1,0 +1,14 @@
+{{/* Robust Google Analytics (GA4) partial */}}
+{{- $enabled := false -}}
+{{- with site.Params.features.analytics.enabled }}{{ $enabled = . }}{{ end -}}
+{{- $gaId := "" -}}
+{{- with site.Params.features.analytics.services.google.id }}{{ $gaId = . }}{{ end -}}
+{{- if and $enabled $gaId -}}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaId }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ $gaId }}');
+  </script>
+{{- end -}}
